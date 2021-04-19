@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Задача «Бабуленькин урожай»</title>
+    <link href="index.css" rel="stylesheet">
+</head>
+<body>
+    <h2>Достижения сельского хозяйства города N</h2>
+        <!-- СТРАНИЦЫ -->
+        <input type="radio" id="0-to-1" name="arrows">
+        <input type="radio" id="1-to-0" name="arrows" checked>
+        <input type="radio" id="1-to-2" name="arrows">
+        <input type="radio" id="2-to-1" name="arrows">
+        <!-- КРЕСТИК -->
+        <input type="radio" id="close-big-picture" name="modal-pictures" value="close" checked>
+        <!-- МОДАЛЬНЫЕ КАРТИНКИ 0 -->
+        <input type="radio" id="orange" name="modal-pictures">
+        <div class="big-picture">
+            <img src="pictures/big-orange.png" alt="апельсин" title="апельсин">
+        </div>
+        <input type="radio" id="cucurbita" name="modal-pictures">
+        <div class="big-picture">
+            <img src="pictures/cucurbita.jpg" alt="тыква" title="тыква">
+        </div>
+        <input type="radio" id="squash" name="modal-pictures">
+        <div class="big-picture">
+            <img src="pictures/squash.jpg" alt="кабачок" title="кабачок">
+        </div>
+        <input type="radio" id="grapefruit" name="modal-pictures">
+        <div class="big-picture">
+            <img src="pictures/grapefruit.jpg" alt="грейпфрут" title="грейпфрут">
+        </div>
+        <!-- МОДАЛЬНЫЕ КАРТИНКИ 1 -->
+        <input type="radio" id="carrot" name="modal-pictures">
+        <div class="big-picture">
+            <img src="pictures/carrot.jpg" alt="морковь" title="морковь">
+        </div>
+        <input type="radio" id="cucumber" name="modal-pictures">
+        <div class="big-picture">
+            <img src="pictures/cucumber.jpg" alt="огурец" title="огурец">
+        </div>
+        <input type="radio" id="tomato" name="modal-pictures">
+        <div class="big-picture">
+            <img src="pictures/tomato.jpg" alt="помидор" title="помидор">
+        </div>
+        <input type="radio" id="eggplant" name="modal-pictures">
+        <div class="big-picture">
+            <img src="pictures/eggplant.jpg" alt="баклажан" title="баклажан">
+        </div>
+        <!-- МОДАЛЬНЫЕ КАРТИНКИ 2 -->
+        <input type="radio" id="plum" name="modal-pictures">
+        <div class="big-picture">
+            <img src="pictures/plum.jpg" alt="слива" title="слива">
+        </div>
+        <input type="radio" id="watermelon" name="modal-pictures">
+        <div class="big-picture">
+            <img src="pictures/watermelon.jpg" alt="арбуз" title="арбуз">
+        </div>
+        <input type="radio" id="cherry" name="modal-pictures">
+        <div class="big-picture">
+            <img src="pictures/cherry.jpg" alt="вишня" title="вишня">
+        </div>
+        <input type="radio" id="raspberries" name="modal-pictures">
+        <div class="big-picture">
+            <img src="pictures/raspberries.jpg" alt="малина" title="малина">
+        </div>
+        <!-- КРЕСТИК -->
+        <label for="close-big-picture">&times;</label>
+        <!-- СТРАНИЦА 0 -->
+        <section class="page-0">
+            <article class="product">
+                <div class="product-picture">
+                    <label for="orange">
+                        <img src="pictures/big-orange.png" alt="апельсин" title="апельсин">
+                    </label>
+                </div>
+                <div class="product-info">
+                    Апельсин — самая распространённая цитрусовая культура во всех тропических и
+                    субтропических областях мира
+                </div>
+            </article>
+            <article class="product">
+                <div class="product-picture">
+                    <label for="cucurbita">
+                        <img src="pictures/cucurbita.jpg" alt="тыква" title="тыква">
+                    </label>
+                </div>
+                <div class="product-info">
+                    Тыква — род травянистых растений семейства Тыквенные
+                </div>
+            </article>
+            <article class="product">
+                <div class="product-picture">
+                    <label for="squash">
+                        <img src="pictures/squash.jpg" alt="кабачок" title="кабачок">
+                    </label>
+                </div>
+                <div class="product-info">
+                    Кабачок — кустовая разновидность тыквы обыкновенной с продолговатыми плодами, без плетей
+                </div>
+            </article>
+            <article class="product">
+                <div class="product-picture">
+                    <label for="eggplant">
+                        <img src="pictures/eggplant.jpg" alt="баклажан" title="баклажан">
+                    </label>
+                </div>
+                <div class="product-info">
+                    Баклажан, или Паслён тёмноплодный — вид многолетних травянистых растений рода Паслён
+                </div>
+            </article>
+            <article class="arrow">
+                <label for="0-to-1">
+                    <img src="pictures/right.png" alt="стрелка вправо"
+                         title="нажмите, чтобы перейти на следующую страницу">
+                </label>
+            </article>
+        </section>
+        <!-- СТРАНИЦА 1-->
+        <section class="page-1">
+            <article class="arrow">
+                <label for="1-to-0">
+                    <img src="pictures/left.png" alt="стрелка влево"
+                         title="нажмите, чтобы перейти на следующую страницу">
+                </label>
+            </article>
+            <article class="product">
+                <div class="product-picture">
+                    <label for="carrot">
+                        <img src="pictures/carrot.jpg" alt="морковь" title="морковь">
+                    </label>
+                </div>
+                <div class="product-info">
+                    Морковь посевная — двулетнее растение, подвид вида морковь дикая.
+                    Обычно в быту под словом «морковь» подразумевается широко распространенный
+                    корнеплод именно этого растения.
+                </div>
+            </article>
+            <article class="product">
+                <div class="product-picture">
+                    <label for="cucumber">
+                        <img src="pictures/cucumber.jpg" alt="огурец" title="огурец">
+                    </label>
+                </div>
+                <div class="product-info">
+                    Огурец обыкновенный, или Огурец посевно́й — однолетнее травянистое растение,
+                    вид рода Огурец семейства Тыквенные, овощная культура.
+                </div>
+            </article>
+            <article class="product">
+                <div class="product-picture">
+                    <label for="tomato">
+                        <img src="pictures/tomato.jpg" alt="помидор" title="помидор">
+                    </label>
+                </div>
+                <div class="product-info">
+                    Томат, или помидор — однолетнее или многолетнее травянистое растение,
+                    вид рода Паслён. Возделывается как овощная культура.
+                </div>
+            </article>
+            <article class="product">
+                <div class="product-picture">
+                    <label for="grapefruit">
+                        <img src="pictures/grapefruit.jpg" alt="грейпфрут" title="грейпфрут">
+                    </label>
+                </div>
+                <div class="product-info">
+                    Грейпфрут — субтропическое вечнозелёное дерево;
+                    вид рода Цитрус семейства Рутовые; а также его плод, достигающий в диаметре 10—15 см.
+                </div>
+            </article>
+            <article class="arrow">
+                <label for="1-to-2">
+                    <img src="pictures/right.png" alt="стрелка вправо"
+                         title="нажмите, чтобы перейти на следующую страницу">
+                </label>
+            </article>
+        </section>
+        <!-- СТРАНИЦА 2-->
+        <section class="page-2">
+            <article class="arrow">
+                <label for="2-to-1">
+                    <img src="pictures/left.png" alt="стрелка влево"
+                         title="нажмите, чтобы перейти на следующую страницу">
+                </label>
+            </article>
+            <article class="product">
+                <div class="product-picture">
+                    <label for="plum">
+                        <img src="pictures/plum.jpg" alt="слива" title="слива">
+                    </label>
+                </div>
+                <div class="product-info">
+                    Слива (лат. Prúnus) — род растений семейства Розовые (Rosaceae).
+                    Включает около 250 видов, распространённых,
+                    главным образом, в северных умеренных областях земного шара
+                </div>
+            </article>
+            <article class="product">
+                <div class="product-picture">
+                    <label for="watermelon">
+                        <img src="pictures/watermelon.jpg" alt="арбуз" title="арбуз">
+                    </label>
+                </div>
+                <div class="product-info">
+                    Арбуз обыкнове́нный (лат. Citrúllus lanátus) — однолетнее травянистое растение,
+                    вид рода Арбуз (Citrullus) семейства Тыквенные (Cucurbitaceae).
+                </div>
+            </article>
+            <article class="product">
+                <div class="product-picture">
+                    <label for="cherry">
+                        <img src="pictures/cherry.jpg" alt="вишня" title="вишня">
+                    </label>
+                </div>
+                <div class="product-info">
+                    Ви́шня (лат. Prúnus subg. Cérasus) — подрод растений рода Слива (Prunus)
+                    семейства Розовые (Rosaceae). Вот она ягода моей мечты!
+                </div>
+            </article>
+            <article class="product">
+                <div class="product-picture">
+                    <label for="raspberries">
+                        <img src="pictures/raspberries.jpg" alt="малина" title="малина">
+                    </label>
+                </div>
+                <div class="product-info">
+                    Мали́на обыкнове́нная (лат. Rúbus idáeus) — полукустарник;
+                    вид рода Рубус семейства Розовые (Rosaceae).
+                    Растёт по вырубкам, лесам, кустарникам, берегам рек. Часто разводится в садах.
+                </div>
+            </article>
+        </section>
+    </body>
+</html>
