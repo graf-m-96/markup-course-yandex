@@ -1,0 +1,544 @@
+body
+{
+    min-width: 920px;
+}
+
+.wrapper
+{
+    display: grid;
+    /*
+    l - empty left
+    r - empty right
+    c - city
+    sd - setting and disk
+    a - account
+    m - media
+    f - find
+    y - yandex
+    w - widget
+    */
+    grid-template-areas: 'c m m sd a'
+        'y f f f r'
+        'l w w w r'
+        'l w w w r';
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 25px;
+}
+
+.city
+{
+    grid-area: c;
+    font-size: 20px;
+    color: #808080;
+    padding: 15px 0 0 15px;
+}
+
+.city > img
+{
+    width: 20px;
+    vertical-align: middle;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+.media
+{
+    grid-area: m;
+    align-self: flex-end;
+}
+
+.media > ul
+{
+    margin-top: 12px;
+    padding-left: 0;
+}
+
+.media li
+{
+    padding-top: 8px;
+    font-size: 17px;
+}
+
+.now-media
+{
+    display: inline-block;
+    font-size: 24px;
+    color: #191970;
+}
+
+.city-media
+{
+    padding-left: 10px;
+    display: inline-block;
+    font-size: 22px;
+    color: #00bfff;
+}
+
+.time-media
+{
+    padding-left: 10px;
+    display: inline-block;
+    font-size: 18px;
+    color: #808080;
+}
+
+.bold
+{
+    font-weight: 600;
+}
+
+.grey
+{
+    color: #808080;
+}
+
+.setting-and-disk
+{
+    position: relative;
+}
+
+.disk
+{
+    position: absolute;
+    bottom: 0;
+}
+
+.big-a
+{
+    color: #00f;
+    font-size: 28px;
+    padding-bottom: 20px;
+}
+
+.big-a > a
+{
+    text-decoration: none;
+}
+
+.disk img
+{
+    max-width: 150px;
+}
+
+.account
+{
+    grid-area: a;
+    text-align: right;
+    margin: 20px 20px 0 0;
+}
+
+.login-title
+{
+    display: block;
+    font-size: 20px;
+    text-decoration: solid;
+    margin-bottom: 20px;
+}
+
+[type='login'],
+[type='password'],
+[type='submit'],
+[name='foreign-pc']
+{
+    margin-top: 20px;
+}
+
+.yandex
+{
+    grid-area: y;
+    font: bold 40px Comic Sans MS Arial serif;
+    text-align: right;
+    margin-top: 10px;
+}
+
+.yandex::first-letter
+{
+    color: #f00;
+}
+
+.find
+{
+    grid-area: f;
+}
+
+.keywords
+{
+    padding-bottom: 10px;
+}
+
+.keyword
+{
+    padding-right: 10px;
+    font: 18px Arial;
+    color: #00f;
+    display: inline-block;
+}
+
+.keyword:hover
+{
+    cursor: pointer;
+}
+
+.find-string
+{
+    display: flex;
+}
+
+.find-string > input
+{
+    width: calc(100% - 100px);
+}
+
+.find input
+{
+    height: 24px;
+    width: 100%;
+    border: 2px solid yellow;
+    border-right: none;
+    outline: 0;
+    outline-offset: 0;
+}
+
+.triangle-for-button
+{
+    border: 15px solid transparent;
+    border-left: 9px solid #ff0;
+}
+
+.find-button
+{
+    display: flex;
+    width: 80px;
+    background: #ff0;
+    font-size: 18px;
+}
+
+.find-button-name
+{
+    margin: auto;
+}
+
+.find-button:hover,
+.triangle-for-button:hover
+{
+    cursor: pointer;
+}
+
+.find-help
+{
+    font-size: 16px;
+    padding-top: 7px;
+}
+
+.help-example
+{
+    color: #808080;
+}
+
+.picture-under-search-string
+{
+    padding-top: 20px;
+}
+
+.picture-under-search-string > img
+{
+    border: 1px solid #000;
+    width: calc(100% - 100px);
+}
+
+.widgets
+{
+    grid-area: w;
+    display: flex;
+}
+
+.widget-column
+{
+    display: inline-block;
+    margin-right: 40px;
+    width: 33%;
+    min-width: 33%;
+
+}
+
+.widget
+{
+    display: none;
+    font-size: 16px;
+}
+
+.widget > h3
+{
+    font: 24px Arial serif;
+    color: #00f;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+}
+
+.visited > ul,
+.tv-show > ul,
+.poster > ul
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.visited li,
+.tv-show li
+{
+    padding-bottom: 10px;
+}
+
+.visited span
+{
+    font-weight: 600;
+}
+
+.anecdote-1,
+.anecdote-2,
+.anecdote-3,
+.anecdote-4,
+.anecdote-5
+{
+    height: 200px;
+    display: none;
+}
+
+.anecdotes input,
+.anecdote-button
+{
+    display: none;
+}
+
+.type-anecdotes
+{
+    color: #00f;
+    font-weight: 600;
+}
+
+.next-anecdote
+{
+    margin-top: 20px;
+    color: #00f;
+    font-weight: 600;
+}
+
+.next-anecdote img
+{
+    width: 20px;
+}
+
+.next-anecdote:hover
+{
+    cursor: pointer;
+}
+
+input[id='anecdote-1']:checked ~ .anecdote-1,
+input[id='anecdote-1']:checked ~ .button-1,
+input[id='anecdote-2']:checked ~ .anecdote-2,
+input[id='anecdote-2']:checked ~ .button-2,
+input[id='anecdote-3']:checked ~ .anecdote-3,
+input[id='anecdote-3']:checked ~ .button-3,
+input[id='anecdote-4']:checked ~ .anecdote-4,
+input[id='anecdote-4']:checked ~ .button-4,
+input[id='anecdote-5']:checked ~ .anecdote-5,
+input[id='anecdote-5']:checked ~ .button-5
+{
+    display: block;
+}
+
+input[id='anecdote-2']:checked ~ .anecdote-1,
+input[id='anecdote-2']:checked ~ .button-1,
+input[id='anecdote-3']:checked ~ .anecdote-2,
+input[id='anecdote-3']:checked ~ .button-2,
+input[id='anecdote-4']:checked ~ .anecdote-3,
+input[id='anecdote-4']:checked ~ .button-3,
+input[id='anecdote-5']:checked ~ .anecdote-4,
+input[id='anecdote-5']:checked ~ .button-4,
+input[id='anecdote-1']:checked ~ .anecdote-5,
+input[id='anecdote-1']:checked ~ .button-5
+{
+    display: none;
+}
+
+.tv-image
+{
+    display: inline-block;
+    background: linear-gradient(to right, #00bfff, #00f);
+    width: 120px;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.car-news
+{
+    position: relative;
+}
+
+.text-with-scroll
+{
+    overflow-y: scroll;
+    height: 200px;
+}
+
+.text-with-scroll::before
+{
+    content: '';
+    top: 80px;
+    z-index: 5;
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 1));
+}
+
+.text-with-scroll::after
+{
+    content: '';
+    bottom: -10px;
+    z-index: 5;
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 1));
+}
+
+.text-with-scroll::-webkit-scrollbar
+{
+    width: 0;
+}
+
+.text-with-scroll
+{
+    -ms-overflow-style: none;
+}
+
+.text-with-scroll
+{
+    overflow: -moz-scrollbars-none;
+}
+
+.weather-image,
+.bung-image
+{
+    display: inline-block;
+}
+
+.bung-image > img
+{
+    width: 20px;
+}
+
+.map
+{
+    font-weight: 600;
+}
+
+.inline
+{
+    display: inline-block;
+}
+
+.setting-and-disk
+{
+    grid-area: sd;
+}
+
+.setting
+{
+    position: relative;
+    margin-top: 20px;
+    text-align: right;
+}
+
+.setting-window
+{
+    z-index: 1000;
+    display: none;
+    border: 1px solid #808080;
+    background: #fff;
+    position: relative;
+    width: 100%;
+    height: 220px;
+    padding-left: 5px;
+    text-align: left;
+}
+
+.setting-window label
+{
+    display: block;
+}
+
+.setting-window label,
+label[for='setting']
+{
+    cursor: pointer;
+}
+
+input[id='visited']:checked ~ .widgets .column1,
+input[id='anecdotes']:checked ~ .widgets .column1,
+input[id='tv-show']:checked ~ .widgets .column2,
+input[id='car-news']:checked ~ .widgets .column2,
+input[id='weather']:checked ~ .widgets .column3,
+input[id='bung']:checked ~ .widgets .column3,
+input[id='map']:checked ~ .widgets .column3,
+input[id='poster']:checked ~ .widgets .column3,
+input[id='visited']:checked ~ .widgets .visited,
+input[id='anecdotes']:checked ~ .widgets .anecdotes,
+input[id='tv-show']:checked ~ .widgets .tv-show,
+input[id='car-news']:checked ~ .widgets .car-news,
+input[id='weather']:checked ~ .widgets .weather,
+input[id='bung']:checked ~ .widgets .bung,
+input[id='map']:checked ~ .widgets .map,
+input[id='poster']:checked ~ .widgets .poster
+{
+    display: inline-block;
+}
+
+.column1,
+.column2,
+.column3,
+input[name='show-window'],
+input[name='setting']
+{
+    display: none;
+}
+
+input[id='setting']:checked ~ .setting-and-disk .setting-window
+{
+    display: block;
+}
+
+input[id='visited'] ~ .setting-and-disk [for='visited']::before,
+input[id='anecdotes'] ~ .setting-and-disk [for='anecdotes']::before,
+input[id='tv-show'] ~ .setting-and-disk [for='tv-show']::before,
+input[id='car-news'] ~ .setting-and-disk [for='car-news']::before,
+input[id='weather'] ~ .setting-and-disk [for='weather']::before,
+input[id='bung'] ~ .setting-and-disk [for='bung']::before,
+input[id='map'] ~ .setting-and-disk [for='map']::before,
+input[id='poster'] ~ .setting-and-disk [for='poster']::before
+{
+    content: '';
+    background-image: url(picture/uncheck-mark.png);
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-size: contain;
+}
+
+input[id='visited']:checked ~ .setting-and-disk [for='visited']::before,
+input[id='anecdotes']:checked ~ .setting-and-disk [for='anecdotes']::before,
+input[id='tv-show']:checked ~ .setting-and-disk [for='tv-show']::before,
+input[id='car-news']:checked ~ .setting-and-disk [for='car-news']::before,
+input[id='weather']:checked ~ .setting-and-disk [for='weather']::before,
+input[id='bung']:checked ~ .setting-and-disk [for='bung']::before,
+input[id='map']:checked ~ .setting-and-disk [for='map']::before,
+input[id='poster']:checked ~ .setting-and-disk [for='poster']::before
+{
+    background-image: url(picture/check-mark.png);
+}

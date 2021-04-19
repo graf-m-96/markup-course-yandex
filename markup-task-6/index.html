@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Задача «Морда»</title>
+    <link href="index.css" rel="stylesheet">
+</head>
+<body>
+    <main class="wrapper">
+        <input type="checkbox" name="show-window" id="setting">
+        <input type="checkbox" name="setting" id="visited" checked>
+        <input type="checkbox" name="setting" id="anecdotes" checked>
+        <input type="checkbox" name="setting" id="tv-show" checked>
+        <input type="checkbox" name="setting" id="car-news" checked>
+        <input type="checkbox" name="setting" id="weather" checked>
+        <input type="checkbox" name="setting" id="bung" checked>
+        <input type="checkbox" name="setting" id="map" checked>
+        <input type="checkbox" name="setting" id="poster" checked>
+        <div class="city">
+            <img src="picture/navigation.png" alt="Навигация" title="Навигатор">
+            Екатеринбург
+        </div>
+        <div class="media">
+            <div class="now-media">Сейчас в СМИ</div>
+            <div class="city-media">в Екатеринбурге</div>
+            <div class="time-media">20 ноября, понедельник</div>
+            <ul>
+                <li>В кремле ответили на слова экс-главы ЦРУ о "запуганном" Путиным Трампом</li>
+                <li>Число жертв землетрясения в Иране и в Иране превысило 350 человек</li>
+                <li>Вероятной целью проникновения в РФ украинского дрона назвали шпионаж</li>
+                <li>Кремль рассказал о местонахождении не явившегося в суд Сечина</li>
+                <li>Кремль прокомментировал перенос послания Путина Федеральному собранию</li>
+            </ul>
+            <span class="bold">USB ЦБ&nbsp;</span>
+            59,18&nbsp;
+            <span class="grey">-0,10&nbsp;</span>
+            &nbsp;
+            <span class="bold">EUR ЦБ&nbsp;</span>
+            68,92&nbsp;
+            <span class="grey">-0,06&nbsp;</span>
+            &nbsp;
+            <span class="bold">НЕФТЬ&nbsp;</span>
+            63,44&nbsp;
+            <span class="grey">-0,27%</span>
+        </div>
+        <div class="setting-and-disk">
+            <div class="setting">
+                <label for="setting">Настройка</label>
+                <div class="setting-window">
+                    <label for="visited">Посещаемое</label>
+                    <label for="anecdotes">Анекдоты</label>
+                    <label for="tv-show">Телепрограмма</label>
+                    <label for="car-news">Автомобильные<br>новости</label>
+                    <label for="weather">Погода</label>
+                    <label for="bung">Пробки</label>
+                    <label for="map">Карты</label>
+                    <label for="poster">Афиша</label>
+                </div>
+            </div>
+            <div class="disk">
+                <a href="http://bit.ly/2AgCERq" target="_blank">
+                    <img src="picture/disk.png" alt="Яндекс диск" title="Яндекс диск">
+                </a>
+                <div class="big-a">
+                    <a href="http://bit.ly/2AgCERq" target="_blank">
+                        Студентам и преподавателям 32гб в подарок!
+                    </a>
+                </div>
+                Бесплатно и навсегда
+            </div>
+        </div>
+        <form class="account">
+            <span class="login-title">Почта</span>
+            <input type="email" placeholder="Логин">
+            <input type="password" placeholder="Пароль">
+            <div><input type="checkbox" name="foreign-pc">Чужой компьютер</div>
+            <input type="submit">
+        </form>
+        <div class="yandex">Яндекс</div>
+        <article class="find">
+            <div class="keywords">
+                <div class="keyword">Видео</div>
+                <div class="keyword">Картинки</div>
+                <div class="keyword">Новости</div>
+                <div class="keyword">Карты</div>
+                <div class="keyword">Маркет</div>
+                <div class="keyword">Переводчик</div>
+                <div class="keyword">Музыка</div>
+                <div class="keyword">Ещё</div>
+            </div>
+            <div class="find-string">
+                <input type="text">
+                <div class="find-button"><div class="find-button-name">Найти</div></div>
+                <div class="triangle-for-button"></div>
+            </div>
+            <div class="find-help">
+                Найдётся всё. Например,
+                <span class="help-example">как разобраться в grid'ах за 2 дня до дедлайна</span>
+            </div>
+            <a href="https://www.google.ru/search?q=яндекс+samsung" target="_blank">
+                <div class="picture-under-search-string">
+                    <img src="picture/samsung.jpg" alt="samsung" title="samsung">
+                </div>
+            </a>
+        </article>
+        <article class="widgets">
+            <div class="widget-column column1">
+                <div class="widget visited">
+                    <h3>Посещаемое</h3>
+                    <ul>
+                        <li><span>Маркет &mdash;</span> китайская распродажа</li>
+                        <li><span>Авто.ру &mdash;</span> Туссан третьей серии</li>
+                        <li><span>Недвижимость &mdash;</span> продажа студии</li>
+                        <li><span>Работа &mdash;</span> охранником</li>
+                        <li><span>Здоровье &mdash;</span> врач на связи</li>
+                        <li><span>Коллекции &mdash;</span> как мелировать волосы</li>
+                        <li><span>Авиабилеты &mdash;</span> из Екатеринбурга</li>
+                    </ul>
+                </div>
+                <div class="widget anecdotes">
+                    <h3>Лучшие анекдоты</h3>
+                    <input type="radio" name="anecdote" id="anecdote-1" checked>
+                    <input type="radio" name="anecdote" id="anecdote-2">
+                    <input type="radio" name="anecdote" id="anecdote-3">
+                    <input type="radio" name="anecdote" id="anecdote-4">
+                    <input type="radio" name="anecdote" id="anecdote-5">
+                    <div class="anecdote-1">
+                        Раздел: <span class="type-anecdotes">Математика</span>.<br>
+                        Ферма.<br>
+                        ...<br>
+                        ...<br>
+                        ...<br>
+                        Это был тест на то, фермер вы или математик
+                    </div>
+                    <div class="anecdote-2">
+                        Раздел: <span class="type-anecdotes">Игра престолов</span>.<br>
+                        - Слушай, Ходор, а какой у тебя пароль к карте сбербанка?<br>
+                        - ...<br>
+                        - Ладно, проехали. Я догадался
+                    </div>
+                    <div class="anecdote-3">
+                        Раздел: <span class="type-anecdotes">Военка</span>.<br>
+                        - Что общего между этим сайтом и здоровым парнем от 18 лет?<br>
+                        - Они оба годные
+                    </div>
+                    <div class="anecdote-4">
+                        Раздел: <span class="type-anecdotes">Математика</span>.<br>
+                        Метро,конечная станция,ночь.Милиционер обнаруживает спящего,уронившего книгу мужика.
+                        Он поднимает книгу и глядит на обложку,читает:<br>
+                        "Л.Ландау.Теория поля."<br>
+                        -Эй,-говорит мент мужику,-проснись, агроном! Приехали
+                    </div>
+                    <div class="anecdote-5">
+                        Раздел: <span class="type-anecdotes">Сети</span>.<br>
+                        Я знаю отличную шутку про TCP, но если она до вас не дойдет, то я повторю.
+                    </div>
+                    <div class="button-1 anecdote-button">
+                        <label for="anecdote-2" class="next-anecdote inline">
+                            <img src="picture/update.png" alt="следующий анекдот" title="Следующий анекдот">
+                        </label>
+                        <label for="anecdote-2" class="next-anecdote inline">Показать ещё</label>
+                    </div>
+                    <div class="button-2 anecdote-button">
+                        <label for="anecdote-3" class="next-anecdote inline">
+                            <img src="picture/update.png" alt="следующий анекдот" title="Следующий анекдот">
+                        </label>
+                        <label for="anecdote-3" class="next-anecdote inline">Показать ещё</label>
+                    </div>
+                    <div class="button-3 anecdote-button">
+                        <label for="anecdote-4" class="next-anecdote inline">
+                            <img src="picture/update.png" alt="следующий анекдот" title="Следующий анекдот">
+                        </label>
+                        <label for="anecdote-4" class="next-anecdote inline">Показать ещё</label>
+                    </div>
+                    <div class="button-4 anecdote-button">
+                        <label for="anecdote-5" class="next-anecdote inline">
+                            <img src="picture/update.png" alt="следующий анекдот" title="Следующий анекдот">
+                        </label>
+                        <label for="anecdote-5" class="next-anecdote inline">Показать ещё</label>
+                    </div>
+                    <div class="button-5 anecdote-button">
+                        <label for="anecdote-1" class="next-anecdote inline">
+                            <img src="picture/update.png" alt="следующий анекдот" title="Следующий анекдот">
+                        </label>
+                        <label for="anecdote-1" class="next-anecdote inline">Показать ещё</label>
+                    </div>
+                </div>
+            </div>
+            <div class="widget-column column2">
+                <div class="widget tv-show">
+                    <h3 class="inline">TV</h3>
+                    <div class="tv-image">ТВ онлайн &#9658;</div>
+                    <ul>
+                        <li>16:00 Понять. Простить <span class="grey">41 Домашний</span></li>
+                        <li>16:30 Место встречи <span class="grey">НТВ</span></li>
+                        <li>16:30 Детективы <span class="grey">Пятый канал</span></li>
+                        <li>16:30 Новости <span class="grey">РЕН ТВ</span></li>
+                        <li>16:30 Гадалка <span class="grey">ТВ-3</span></li>
+                        <li>16:30 Реальные пацаны <span class="grey">ТНТ</span></li>
+                    </ul>
+                </div>
+                <div class="widget car-news">
+                    <h3>Автомобильные<br>новости</h3>
+                    <div class="text-with-scroll">
+                        <p>
+                            Tesla Motors — компания, производящая электромобили и их комплектующие,
+                            основанная пионером этой области (а также пионером сферы космического туризма и
+                            космической коммерции) Элоном Маском.
+                            Среди инвесторов компании числятся Ларри Пейдж и Сергей Брин,
+                            владельцы корпорации Google.
+                            Основная задача компании — сделать электромобили доступными для пользователей
+                            среднего ценового сегмента;
+                            снизить зависимость от бензиновых двигателей, и следовательно, выхлоп газов.
+                            Задача Элона Маска — доказать, что на электричестве можно ездить.
+                            Среди последних заявлений Маска — Tesla ценой в 20 тысяч долларов за пару лет.
+                        </p>
+                        <p>
+                            Компания Tesla Motors представила свой первый электрический грузовик и
+                            новую легковую модель - спорткар с откидывающимся верхом.
+                            Презентация прошла на площадке компании в городе Хоторн в Калифорнии.
+                            Как заявил основатель и исполнительный директор Tesla Motors Илон Маск,
+                            создание электрогрузовика стало для компании очередным шагом на пути к
+                            освобождению экономики от использования ископаемых видов топлива.
+                            Электрогрузовик Tesla Semi Truck сможет проехать без подзарядки до 500 миль
+                            (800 километров), а для того, чтобы проехать еще 400 миль (около 650 км),
+                            ему хватит всего получасовой зарядки, утверждает Маск.
+                            При максимальной загрузке в 36 тонн Semi Truck может разогнаться до 100
+                            километров в час за 20 секунд, а без груза - всего за пять.
+                        </p>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <div class="widget-column column3">
+                <div class="widget weather">
+                    <h3 class="inline">Погода</h3>
+                    <div class="weather-image">
+                        <img src="picture/month.png" alt="Месяц за облаком" title="Месяц">
+                    </div>
+                    -8 &deg;C
+                    <p>Вечер -5, Ночь -7</p>
+                </div>
+                <div class="widget bung">
+                    <h3 class="inline">Пробки</h3>
+                    <div class="bung-image">
+                        <img src="picture/yellow.jpg" alt="Желтый свет светофора" title="Светофор">
+                    </div>
+                    4 балла
+                    <p>Местами затруднения</p>
+                </div>
+                <div class="widget map">
+                    <h3>Карта Екатеринбурга</h3>
+                    <div class="inline">Такси</div>
+                    &nbsp;
+                    <div class="inline">Расписания</div>
+                    <div>Международные автобусы</div>
+                </div>
+                <div class="widget poster">
+                    <h3>Афиша</h3>
+                    <ul>
+                        <li>Субурбикон &nbsp;<span class="grey">премьера в чт</span></li>
+                        <li>Последний богатырь &nbsp;<span class="grey">приключения</span></li>
+                        <li>Фиксики: Большой секрет &nbsp;<span class="grey">мультфильм</span></li>
+                        <li>Тор: Рагнарёк &nbsp;<span class="grey">фэнтези</span></li>
+                        <li>Убийство в Восточном...&nbsp;<span class="grey">драма</span></li>
+                        <li><span class="bold">Концерты &mdash; Brainstorm</span></li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+    </main>
+</body>
+</html>
