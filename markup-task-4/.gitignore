@@ -1,0 +1,8 @@
+.DS_Store
+.git
+.idea
+.package
+*.log
+*.swp
+
+node_modules
