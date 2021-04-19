@@ -1,0 +1,331 @@
+@font-face
+{
+    font-family: 'Lobster';
+    src: url('/fonts/Lobster/Lobster-Regular.ttf');
+}
+
+@font-face
+{
+    font-family: 'Pattaya';
+    src: url('/fonts/Pattaya/Pattaya-Regular.ttf');
+}
+
+@font-face
+{
+    font-family: 'Castle';
+    src: url('fonts/blackwood_castle/BLACC___.TTF');
+}
+
+body
+{
+    margin: 0;
+}
+
+main
+{
+    background-image: url(picture/black-whites/paper-white.jpg);
+}
+
+.newspaper
+{
+    margin: 3% 3% 0;
+    padding-bottom: 7%;
+    -webkit-column-width: 300px;
+    -moz-column-width: 300px;
+    column-width: 300px;
+    -webkit-column-gap: 50px;
+    -moz-column-gap: 50px;
+    column-gap: 50px;
+    -webkit-column-rule: 2px solid #000;
+    -moz-column-rule: 2px solid #000;
+    column-rule: 2px solid #000;
+}
+
+h1
+{
+    font: 2.5rem Castle, cursive;
+    text-align: center;
+    display: inline-block;
+    width: 95%;
+}
+
+.logo
+{
+    width: 4%;
+    display: inline-block;
+}
+
+.magazine-info
+{
+    border-top: 7px double #d3d3d3;
+    border-bottom: 7px double #d3d3d3;
+    margin-bottom: 30px;
+    font: 1rem Lobster, segoe print, cursive, sans-serif;
+}
+
+.magazine-date
+{
+    display: inline-block;
+    text-align: right;
+    width: 70%;
+    font-weight: 600;
+}
+
+.magazine-number
+{
+    display: inline-block;
+    text-align: right;
+    width: 29%;
+    font-weight: 600;
+}
+
+.padding-top-20px
+{
+    padding-top: 20px;
+}
+
+h2
+{
+    font: 2rem Lobster, segoe print, cursive, sans-serif;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.article-text
+{
+    font: 1rem Pattaya cursive;
+    /* переносы слов, если возможно */
+    hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+}
+
+img
+{
+    width: 100%;
+    border-radius: 20px;
+}
+
+figure
+{
+    border: 1px solid #333;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 0 -10px 20px -10px;
+    width: 100%;
+    background: #f0f0f0;
+    /*!* запрещаем перенос *!*/
+    display: inline-block;
+}
+
+figcaption
+{
+    text-align: center;
+    font-size: 1rem;
+}
+
+.linux-comparison
+{
+    border-collapse: collapse;
+    border: 2px solid;
+    text-align: center;
+    /*!* запрещаем перенос *!*/
+    display: inline-block;
+}
+
+.center
+{
+    text-align: center;
+}
+
+th
+{
+    text-align: left;
+    background: #ccc;
+    padding: 5px;
+    border: 1px solid #000;
+}
+
+td
+{
+    padding: 5px;
+    border: 1px solid #000;
+}
+
+ol
+{
+    padding: 0;
+    margin-left: 20px;
+}
+
+.tag-similarity
+{
+    margin-left: 20px;
+}
+
+h3
+{
+    font: 1.5rem Lobster, segoe print, cursive, sans-serif;
+    font-weight: 400;
+}
+
+p:first-child:first-letter
+{
+    font: 2.5rem italic bold Lobster, Comic Sans MS, cursive;
+}
+
+.struck-through
+{
+    text-decoration: line-through;
+}
+
+.fatty
+{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+cite
+{
+    font: 1rem italic Comic Sans MS cursive;
+    font-weight: 500;
+}
+
+.glued-column
+{
+    -webkit-column-span: all;
+    column-span: all;
+}
+
+.figure-no-full
+{
+    width: 90%;
+    display: inline-block;
+}
+
+.vertical-text
+{
+    /* Моноширинный вертикальный текст */
+    width: 1ch;
+    word-wrap: break-word;
+    /* стили */
+    font: 2.5rem segoe print, cursive, sans-serif;
+    font-weight: 600;
+    /* рамзер */
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+/* РАЗМЕР МЕНЬШЕ */
+
+input[value='small']:checked ~ main .article-text
+{
+    font-size: .7rem;
+}
+
+input[value='small']:checked ~ main .magazine-info :nth-child(n)
+{
+    font-size: .7rem;
+}
+
+input[value='small']:checked ~ main h1
+{
+    font-size: 1.75rem;
+}
+
+input[value='small']:checked ~ main h2
+{
+    font-size: 1.4rem;
+}
+
+input[value='small']:checked ~ main figcaption
+{
+    font-size: .7rem;
+}
+
+input[value='small']:checked ~ main h3
+{
+    font-size: 1.05rem;
+}
+
+input[value='small']:checked ~ main .fatty
+{
+    font-size: 1.05rem;
+}
+
+input[value='small']:checked ~ main article p:first-child::first-letter
+{
+    font-size: 1.75rem;
+}
+
+/* РАЗМЕР БОЛЬШЕ */
+
+input[value='big']:checked ~ main .article-text
+{
+    font-size: 1.3rem;
+}
+
+input[value='big']:checked ~ main .magazine-info :nth-child(n)
+{
+    font-size: 1.3rem;
+}
+
+input[value='big']:checked ~ main h1
+{
+    font-size: 3.25rem;
+}
+
+input[value='big']:checked ~ main h2
+{
+    font-size: 2.6rem;
+}
+
+input[value='big']:checked ~ main figcaption
+{
+    font-size: 1.3rem;
+}
+
+input[value='big']:checked ~ main h3
+{
+    font-size: 1.95rem;
+}
+
+input[value='big']:checked ~ main .fatty
+{
+    font-size: 1.95rem;
+}
+
+input[value='big']:checked ~ main article p:first-child::first-letter
+{
+    font-size: 3.25rem;
+}
+
+/* ШРИФТ */
+
+input[value='arial']:checked ~ main :nth-child(n)
+{
+    font-family: Arial, sans-serif;
+}
+
+input[value='times']:checked ~ main :nth-child(n)
+{
+    font-family: 'Times New Roman', serif;
+}
+
+/* ЦВЕТ */
+
+input[value='white']:checked ~ main
+{
+    background-image: url(picture/black-whites/paper-black.jpg);
+    color: #fff;
+}
+
+input[value='white']:checked ~ main figure
+{
+    background: #000;
+}
+
